@@ -28,11 +28,14 @@ body {
   padding: 0 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 150px;
 }
 
 #app {
 position: relative;
+display: flex;
 }
 
 button {
@@ -43,6 +46,7 @@ button {
   position: relative;
   -webkit-box-shadow: 0px 5px 0px 0px #0000008a;
   box-shadow: 0px 5px 0px 0px #0000008a;
+  margin-bottom: 50px;
 }
 
 button:active {
@@ -51,4 +55,73 @@ button:active {
   box-shadow: 0px 2px 0px 0px #0000008a;
   top: 3px;
 }
+
+h3 {
+  font-size: 30px;
+} 
+
+.loading {
+  color: #cf9820;
+}
+
+
+h4 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.divOne {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  width: 300px;
+  left: -200px;
+}
+
+.divTwo {
+  position: absolute;
+  top: 350px;
+  left: 0;
+  width: 200px;
+  left: 120px;
+}
+
+.circle {
+  position: absolute;
+  border: 1px solid black;
+  padding: 0;
+  margin: 1em 100px;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+  left: -260px;
+}
+
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+  border: 1px solid #8c7676;
+  background: #6ebbe0;
+  background-color: #85e279;
+  animation-name: example;
+  animation-duration: 6s;
+}
+
+.text {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(60deg) rotate(15deg);
+  padding-top: 20px;
+}
+
 
